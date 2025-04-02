@@ -1,305 +1,311 @@
-:root{
-    --background-color: #1E1E1E;
-    --primary-color: #1E1E1E;
-    --secondary-color: #EAB308;
-    --accent-color: #0F62FE;
-    --body-text: 'Montserrat';
+:root {
+  --background-color: #1e1e1e;
+  --primary-color: #1e1e1e;
+  --secondary-color: #eab308;
+  --accent-color: #0f62fe;
+  --body-text: "Montserrat";
 }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: var(--background-color);   
-    overflow-x: hidden;
+body {
+  background-color: var(--background-color);
+  overflow-x: hidden;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 20px;
-    background-color: #1E1E1E;
-    font-weight: bold;
-    position: fixed;
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 20px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: #1e1e1e;
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-nav .logo{
-    font-family: sans-serif;
-    color: var(--secondary-color);
-    /* color: #fff; */
+nav .logo {
+  font-family: sans-serif;
+  color: var(--secondary-color);
+  /* color: #fff; */
 }
-nav .logo .bn{
-    font-weight: 200;
+nav .logo .bn {
+  font-weight: 200;
 }
-nav a{
-    text-decoration: none;
+nav a {
+  text-decoration: none;
 }
-nav .btn{
-    background-color: var(--secondary-color);
-    padding: 10px 20px;
-    font-size: 1.1rem;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    color: var(--primary-color);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    animation: animate-shop 1s infinite;
-    width: 12rem;
-    text-align: center;
-    height: 2.8rem;
+nav .btn {
+  background-color: var(--secondary-color);
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: var(--primary-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  animation: animate-shop 1s infinite;
+  width: 12rem;
+  text-align: center;
+  height: 2.8rem;
 }
 @keyframes animate-shop {
-    to{
-        font-size: 1.2rem;
-    }
+  to {
+    font-size: 1.2rem;
+  }
 }
 
 button:hover,
-#now:hover{
-    cursor: pointer;
-    background-color: #a77d02;
+#now:hover {
+  cursor: pointer;
+  background-color: #a77d02;
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-main{
-    display: grid;
-    place-content: center;
+main {
+  display: grid;
+  place-content: center;
 }
-main h1{
-    color: var(--secondary-color);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2rem;
-    text-align: center;
-    line-height: 54px;
+main h1 {
+  color: var(--secondary-color);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 54px;
 }
-main .card-container{
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    flex-wrap: wrap;
+main .card-container {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap;
 }
-main .card-container .card{
-    width: 40em;
-    height: 40em;
+main .card-container .card {
+  width: 40em;
+  height: 40em;
 }
 main .card-container .card img,
-main .card-container .card video{  
+main .card-container .card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+main .card-container .card .shop-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+main .card-container .card button {
+  background-color: var(--secondary-color);
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: var(--primary-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  animation: animate-shop 1s infinite;
+  text-align: center;
+}
+
+#price {
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+}
+#price del {
+  font-style: italic;
+  opacity: 0.6;
+}
+#price span {
+  font-style: italic;
+  color: #eab308;
+  background-color: #1e1e1e;
+}
+#offer p {
+  margin-top: 10px;
+  font-size: 2.4rem;
+  color: #ffff;
+  text-align: center;
+}
+#offer ul {
+  color: #fff;
+  line-height: 3.6rem;
+}
+#offer ul li {
+  list-style: none;
+}
+#colors {
+  color: #fff;
+  text-align: center;
+}
+#colors {
+  font-size: 2.2rem;
+  font-family: serif;
+  margin-top: 20px;
+}
+#colors p {
+  font-size: 1.6rem;
+}
+#hurry {
+  text-align: center;
+  font-size: 2.2rem;
+  font-family: serif;
+  color: #fff;
+  margin-top: 20px;
+}
+#now {
+  background-color: var(--secondary-color);
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  width: 90vw;
+  outline: none;
+  border: none;
+  color: var(--primary-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+#text {
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  font-weight: 200;
+  color: #fff;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+main #order {
+  display: grid;
+  place-content: center;
+  margin-inline: auto;
+}
+main #order form {
+  color: #fff;
+  width: 80vw;
+  margin-inline: auto;
+}
+main #order input,
+main #order select {
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 10px;
+  color: #eab308;
+  accent-color: var(--secondary-color);
+}
+main #order select option {
+  background-color: var(--background-color);
+}
+main #order u {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+main #order p {
+  line-height: 1.7rem;
+  font-family: sans-serif;
+}
+main #order h1 {
+  margin-top: 70px;
+}
+main #order h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  color: #fff;
+}
+main #order input[type="submit"] {
+  background-color: var(--secondary-color);
+  color: #1e1e1e;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+main #order input[type="submit"]:hover {
+  cursor: pointer;
+}
+.alternate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+#contact {
+  background-color: var(--secondary-color);
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: var(--primary-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#contact:hover {
+  cursor: pointer;
+}
+footer {
+  background-color: #eab308;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 20px;
+  line-height: 1.7rem;
+}
+#why {
+  color: #fff;
+}
+#why ul {
+  line-height: 3rem;
+}
+#why ul li {
+  list-style: none;
+}
+.choose p {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.choose ul li {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+#head{
+   margin-bottom: 0;
+   color: #fff;
+   text-align: center;
+}
+@media (max-width: 360px) {
+  main .card-container .card {
+    width: 90vw;
+    height: 20em;
+  }
+  main .card-container .card img,
+  main .card-container .card video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-}
-main .card-container .card .shop-now{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-main .card-container .card button{
-    background-color: var(--secondary-color);
-    padding: 10px 20px;
-    font-size: 1.1rem;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    color: var(--primary-color);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    animation: animate-shop 1s infinite;
-    text-align: center;
-}
-
-#price{
-    font-size: 2.5rem;
-    color: #fff;
-    text-align: center;
-}
-#price del{
-    font-style: italic;
-    opacity: 0.6;
-}
-#price span{
-    font-style: italic;
-   color: #EAB308;
-   background-color: #1E1E1E;
-}
-#offer p{
-    margin-top: 10px;
-    font-size: 2.4rem;
-    color: #ffff;
-    text-align: center;
-}
-#offer ul{
-    color: #fff;
-    line-height: 3.6rem;
-}
-#offer ul li{
-    list-style: none;
-}
-#colors{
-    color: #fff;
-    text-align: center;
-}
-#colors{
-    font-size: 2.2rem;
-    font-family: serif;
-    margin-top: 20px;
-}
-#colors p{
-    font-size: 1.6rem;
-}
-#hurry{
-    text-align: center;
-    font-size: 2.2rem;
-    font-family: serif; 
-    color: #fff;
-    margin-top: 20px;
-}
-#now{
-    background-color: var(--secondary-color);
-    padding: 10px 20px;
-    font-size: 1.1rem;
-    border-radius: 10px;
-    width: 90vw;
-    outline: none;
-    border: none;
-    color: var(--primary-color);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;  
-}
-#text{
-    text-align: center;
-    font-size: 1.8rem;
-    font-family: sans-serif;
-    font-weight: 200; 
-    color: #fff;
-    margin-top: 20px;
-    opacity: 0.8;
-}
-main #order{
+  }
+  main #order {
+    width: 100vw;
     display: grid;
-    place-content: center;
-    margin-inline: auto;
+  }
 }
-main #order form{
-    color: #fff;
-    width: 80vw;
-    margin-inline: auto;
-}
-main #order input,
-main #order select{
-    width: 100%;
-    outline: none;
-    background-color: transparent;
-    border: 1px solid var(--secondary-color);
-    font-size: 1.2rem;
-    padding: 10px;
-    border-radius: 10px;
-    color: #EAB308;
-    accent-color: var(--secondary-color);
-}
-main #order select option{
-    background-color: var(--background-color);
-    
-}
-main #order u{
-    color: #fff;
-    font-size: 2rem;
-    line-height: 2rem;
-}
-main #order p{
-    line-height: 1.7rem;
-    font-family: sans-serif;
-}
-main #order h1{
-    margin-top: 70px;
-}
-main #order h2{
-    font-size: 2.4rem;
-    text-align: center;
-    color: #fff;
-}
-main #order input[type="submit"]{
-    background-color: var(--secondary-color);
-    color: #1E1E1E;
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-main #order input[type="submit"]:hover{
-    cursor: pointer;
-}
-.alternate{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-}
-#contact{
-    background-color: var(--secondary-color);
-    padding: 10px 20px;
-    font-size: 1.1rem;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    color: var(--primary-color);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-#contact:hover{
-    cursor: pointer;
-}
-footer{
-    background-color: #EAB308;
-    font-size: 1.2rem;
-    text-align: center;
-    padding: 20px;
-    line-height: 1.7rem;
-}
-#why{
-    color: #fff;
-}
-#why ul{
-    line-height: 3rem;
-}
-#why ul li{
-    list-style: none;
-}
-.choose p{
-    text-align: center;
-    font-size: 1.4rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.choose ul li{
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-}
-@media (max-width: 360px) {
-    main .card-container .card{
-        width: 90vw;
-        height: 20em;
-    }
-    main .card-container .card img,
-    main .card-container .card video{  
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 10px;
-    }
-    main #order{
-        width: 100vw;
-        display: grid;
-    }
-   
-}
-
