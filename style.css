@@ -68,6 +68,7 @@ button:hover,
 li {
   list-style: none;
   line-height: 44px;
+  font-family: sans-serif;
 }
 main {
   display: grid;
@@ -106,6 +107,9 @@ main .card-container .card video {
   object-fit: cover;
   border-radius: 10px;
 }
+main .card-container .card.golden{
+  object-fit: none;
+}
 main .card-container .card .shop-now {
   display: flex;
   justify-content: center;
@@ -125,6 +129,7 @@ main .card-container .card button {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   animation: animate-shop 1.5s infinite;
   text-align: center;
+  margin-top: 5px;
 }
 
 #price {
